@@ -1,0 +1,16 @@
+{
+    "name": "MDM V7.15",
+    "short_name": "MDM",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#00FF00",
+    "theme_color": "#000000",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "army-logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+} 

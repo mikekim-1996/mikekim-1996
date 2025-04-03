@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans CJK TC', 'Source Han Sans TC', PMingLiU, sans-serif;
+}
+
+body {
+    background: #00FF00;
+    color: #000;
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.active {
+    display: flex !important;
+}
+
+/* Password Screen */
+#password-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.password-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.password-container input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px;
+}
+
+.password-container button {
+    padding: 8px 20px;
+    background: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Main Screen */
+.header {
+    background: #333333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+.content {
+    text-align: center;
+}
+
+.lock-status {
+    font-size: 1.4em;
+    color: #333333;
+}
+
+.area-title {
+    font-size: 5rem;
+    margin: 0;
+}
+
+[contenteditable="true"] {
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+[contenteditable="true"]:focus {
+    background-color: rgba(0, 122, 255, 0.1);
+}
+
+.current-time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 80px 0;
+}
+
+.control-button {
+    background: #ccffcc;
+    border: none;
+    padding: 5px 0 5px 15px;
+    text-align: left;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 70%;
+}
+
+.control-button-text {
+    font-size: 1.5rem;
+    margin-left: 16px;
+}
+
+.status-dot {
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-dot.green {
+    background: #00FF00;
+}
+
+.status-dot.red {
+    background: #FF0000;
+}
+
+.id-card {
+    font-family: 'DFKai-SB', 'Noto Sans CJK TC', 'Source Han Sans TC', PMingLiU, sans-serif;
+    position: relative;
+    background: white;
+    margin: 20px auto;
+    padding: 5px;
+    width: 250px;
+    border-radius: 8px;
+    border: 0.5px solid black;
+}
+
+.id-card-background {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.id-card-background img {
+    width: 40px;
+    height: 30px;
+}
+
+.id-card-background-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.card-title {
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+}
+
+.card-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+.footer {
+    color: #333333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.warning {
+    color: #FF0000;
+    font-size: 1.25rem;
+    font-weight: 500;
+} 
