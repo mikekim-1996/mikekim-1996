@@ -9,6 +9,10 @@ body {
     background: #00FF00;
     color: #000;
     min-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .hidden {
@@ -56,6 +60,10 @@ body {
 }
 
 /* Main Screen */
+#main-screen {
+    min-height: 100vh;
+}
+
 .header {
     background: #333333;
     color: white;
@@ -84,7 +92,7 @@ body {
 }
 
 .area-title {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
 }
 
@@ -95,6 +103,13 @@ body {
 
 [contenteditable="true"]:focus {
     background-color: rgba(0, 122, 255, 0.1);
+}
+
+.main-screen-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 60px); /* Subtract header height */
 }
 
 .current-time {
