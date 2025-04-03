@@ -203,11 +203,9 @@ body {
     width: 100%;
     padding: 20px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
-
 .warning {
     color: #FF0000;
-    font-size: 1.25rem;
     font-weight: 500;
 } 
