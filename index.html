@@ -25,7 +25,88 @@
                 <span class="version" contenteditable="true">V7.15</span>
             </div>
             <span>系統選單</span>
+        </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDM V7.15</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#000000">
+</head>
+<body>
+    <div id="password-screen" class="active">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button onclick="checkPassword()">Login</button>
         </div>
+    </div>
+
+    <div id="main-screen" class="hidden">
+          <div class="header">
+            <div class="logo">
+                <img src="./logo.png" alt="Military Emblem">
+                <span>國軍 MDM</span>
+                <span class="version" contenteditable="true">V7.15</span>
+            </div>
+            <span>系統選單</span>
+        </div>
+
+        <div class="content">
+            <div class="lock-status" contenteditable="true">已上鎖，可進入先鋒營區</div>
+            
+            <div class="area-title" contenteditable="true">先鋒營區</div>
+            
+            <div class="current-time">04/03 06:51:35</div>
+
+            <div class="button-container">
+                <button class="control-button lock">
+                    <span class="status-dot green"></span>
+                    <span class="control-button-text">
+                      上鎖:進入管制模式
+                    </span>
+                </button>
+                <button class="control-button unlock">
+                    <span class="status-dot red"></span>
+                    <span class="control-button-text">
+                      解鎖:離開管制模式
+                    </span>
+                </button>
+            </div>
+
+            <div class="id-card">
+                <div class="id-card-background">
+                  <div class="id-card-background-row">
+                    <img src="./background.png" alt="background" class="background">
+                    <img src="./background.png" alt="background" class="background">
+                    <img src="./background.png" alt="background" class="background">
+                  </div>
+                  <div class="id-card-background-row">
+                    <img src="./background.png" alt="background" class="background">
+                    <img src="./background.png" alt="background" class="background">  
+                  </div>
+                  <div class="id-card-background-row">
+                    <img src="./background.png" alt="background" class="background">
+                    <img src="./background.png" alt="background" class="background">
+                    <img src="./background.png" alt="background" class="background">    
+                  </div>
+                </div>
+                <div class="card-title">國軍營內民用通信</div>
+                <div class="card-subtitle">資訊器材管制標籤</div>
+                <div class="card-number">C228790358</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="lock-at" contenteditable="true">上鎖時間：04/01 22:46:25</div>
+            <div class="setting-file" contenteditable="true">設定檔：V1.0 (03/10 10:08:38)</div>
+            <div class="warning">仿冒必究</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
 
         <div class="content">
             <div class="lock-status" contenteditable="true">已上鎖，可進入先鋒營區</div>
