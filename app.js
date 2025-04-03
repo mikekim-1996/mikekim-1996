@@ -1,5 +1,3 @@
-// Password protection
-const CORRECT_PASSWORD = 'king'; // Change this to your desired password
 const passwordScreen = document.getElementById('password-screen');
 const mainScreen = document.getElementById('main-screen');
 const currentTimeElement = document.querySelector('.current-time');
@@ -15,7 +13,7 @@ if (!sessionStorage.getItem('authenticated')) {
 
 function checkPassword() {
     const passwordInput = document.getElementById('password-input');
-    if (passwordInput.value === CORRECT_PASSWORD) {
+    if (passwordInput.value === 'king') {
         sessionStorage.setItem('authenticated', 'true');
         passwordScreen.classList.remove('active');
         mainScreen.classList.remove('hidden');
