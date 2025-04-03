@@ -128,7 +128,7 @@ body {
 .control-button {
     background: rgba(220, 255, 220, 0.7);
     border: none;
-    padding: 5px 5px 5px 15px;
+    padding: 5px 10px 5px 15px;
     text-align: left;
     font-size: 1.1em;
     display: flex;
